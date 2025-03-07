@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #ffffff;
-  background: url('images/r6background.jpg') no-repeat center center fixed;
+  background: url("../images/r6background.jpg") no-repeat center center fixed;
   background-size: cover; /* Ensures the image covers the entire background */
   margin: 0;
   display: flex;
@@ -13,41 +13,60 @@ body {
   min-height: 100vh;
 }
 
+/* Centering Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Header Section */
 .header {
   text-align: center;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header img {
   display: block;
   margin: 0 auto;
-  max-width: 100px; /* Adjust logo size */
+  max-width: 120px; /* Adjust logo size */
   height: auto;
 }
 
+/* Content Box Styling */
 .content-box {
   background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
   width: 90%;
-  margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Form Section */
 .form-section h2 {
   text-align: center;
   color: #f7c948; /* Golden text */
 }
 
-form img {
+/* Resized Roles Image */
+#roles {
   display: block;
-  margin: 0 auto 15px;
-  max-width: 200px; /* Smaller size for roles image */
+  margin: 10px auto;
+  max-width: 80%; /* Make it responsive */
   height: auto;
-  border-radius: 5px; /* Slight rounding for aesthetic */
+  border-radius: 5px;
 }
 
+/* Form Inputs */
 form label {
   display: block;
   margin-bottom: 5px;
