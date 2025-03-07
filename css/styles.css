@@ -1,0 +1,113 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: url('images/r6background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+  }
+  
+  .header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    color: #f7c948;
+  }
+  
+  .header img {
+    display: block;
+    margin: 0 auto; /* Centers the logo */
+    max-width: 150px; /* Ensure the logo fits neatly */
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .form-section {
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent form background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto; /* Centers the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f7c948;
+    text-align: center;
+  }
+  
+  form img {
+    display: block;
+    margin: 0 auto 15px; /* Centers the roles image and adds space below */
+    max-width: 100%; /* Ensures it fits the form section width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Rounds the edges slightly */
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input, form select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form input, form select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  form input::placeholder {
+    color: #cccccc;
+  }
+  
+  button {
+    background: #f7c948;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #daa520;
+  }
+  
+  footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  /* Media query for tablets */
+  @media (min-width: 768px) {
+    .header h1 {
+      font-size: 2.5rem;
+    }
+    .form-section {
+      padding: 40px;
+    }
+  }
+  
+  /* Media query for desktops */
+  @media (min-width: 1024px) {
+    body {
+      padding: 0 10%;
+    }
+  
+    .form-section {
+      max-width: 700px;
+    }
+  }  
