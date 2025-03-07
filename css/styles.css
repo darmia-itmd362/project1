@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #ffffff;
-  background: url("../images/r6background.jpg") no-repeat center center fixed;
+  background: url("../images/r6background.jpg");
   background-size: cover; /* Ensures the image covers the entire background */
   margin: 0;
   display: flex;
