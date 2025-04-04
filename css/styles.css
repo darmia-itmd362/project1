@@ -1,10 +1,10 @@
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", "Verdana", "Tahoma";
   line-height: 1.6;
   color: #ffffff;
   background: url("../images/r6background.jpg");
-  background-size: cover; /* Ensures the image covers the entire background */
+  background-size: cover;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
 /* Header Section */
 .header {
   text-align: center;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 10px;
   width: 90%;
@@ -37,13 +37,13 @@ body {
 .header img {
   display: block;
   margin: 0 auto;
-  max-width: 120px; /* Adjust logo size */
+  max-width: 120px;
   height: auto;
 }
 
 /* Content Box Styling */
 .content-box {
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -54,14 +54,14 @@ body {
 /* Form Section */
 .form-section h2 {
   text-align: center;
-  color: #f7c948; /* Golden text */
+  color: #f7c948;
 }
 
 /* Resized Roles Image */
 #roles {
   display: block;
   margin: 10px auto;
-  max-width: 80%; /* Make it responsive */
+  max-width: 80%;
   height: auto;
   border-radius: 5px;
 }
@@ -75,7 +75,7 @@ form label {
 
 form input, form select, button {
   width: 100%;
-  max-width: 500px; /* Center and limit field width */
+  max-width: 500px;
   margin: 10px auto;
   padding: 10px;
   border: 1px solid #ccc;
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-  background: #daa520; /* Darker golden hover effect */
+  background: #daa520;
 }
 
 /* Center footer */
@@ -102,4 +102,35 @@ footer {
   text-align: center;
   padding: 10px;
   color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+
+  .header {
+    max-width: 90%;
+  }
+
+  form input, form select, button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 70%;
+  }
+
+  .content-box {
+    max-width: 80%;
+  }
+
+  form input, form select, button {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
 }
