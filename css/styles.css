@@ -11,6 +11,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  text-align: center; /* Added for consistent text centering */
 }
 
 /* Centering Container */
@@ -49,6 +50,7 @@ body {
   max-width: 600px;
   width: 90%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 /* Form Section */
@@ -67,10 +69,17 @@ body {
 }
 
 /* Form Inputs */
+form {
+  display: flex; /* Ensures alignment of form elements */
+  flex-direction: column;
+  align-items: center;
+}
+
 form label {
   display: block;
   margin-bottom: 5px;
   color: #f7c948;
+  text-align: left; /* Keeps labels aligned with inputs */
 }
 
 form input, form select, button {
@@ -81,7 +90,6 @@ form input, form select, button {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  display: block;
 }
 
 button {
